@@ -210,6 +210,18 @@
     <Compile Include="src\main.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="src\toolbox.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\toolbox.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\week1.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\week1.h">
+      <SubType>compile</SubType>
+    </Compile>
     <None Include="src\asf.h">
       <SubType>compile</SubType>
     </None>
