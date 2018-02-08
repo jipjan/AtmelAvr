@@ -6,6 +6,8 @@ src\toolbox.c
 
 src\week1.c
 
+src\week2.c
+
 src\ASF\common\boards\user_board\init.c
 
 src\main.c

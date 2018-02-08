@@ -222,6 +222,12 @@
     <Compile Include="src\week1.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="src\week2.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\week2.h">
+      <SubType>compile</SubType>
+    </Compile>
     <None Include="src\asf.h">
       <SubType>compile</SubType>
     </None>
