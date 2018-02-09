@@ -222,10 +222,22 @@
     <Compile Include="src\week1.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="src\week2.c">
+    <Compile Include="src\week2a.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="src\week2.h">
+    <Compile Include="src\week2a.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\week2b.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\week2b.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\week2c.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\week2c.h">
       <SubType>compile</SubType>
     </Compile>
     <None Include="src\asf.h">

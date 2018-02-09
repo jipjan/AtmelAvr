@@ -6,7 +6,11 @@ src\toolbox.c
 
 src\week1.c
 
-src\week2.c
+src\week2a.c
+
+src\week2b.c
+
+src\week2c.c
 
 src\ASF\common\boards\user_board\init.c
 

@@ -4,9 +4,10 @@
  * Created: 8-2-2018 15:51:17
  *  Author: Trist
  */ 
-#include "week2.h"
+#include "week2a.h"
 #include <avr/interrupt.h>
 
+/*
 ISR(INT1_vect)
 {
 	if (PORTC == 0)
@@ -22,6 +23,7 @@ ISR(INT2_vect)
 	else
 		PORTC >>= 1;
 }
+*/
 
 void opdr2B2()
 {

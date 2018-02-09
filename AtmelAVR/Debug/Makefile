@@ -52,7 +52,9 @@ SUBDIRS :=  \
 C_SRCS +=  \
 ../src/toolbox.c \
 ../src/week1.c \
-../src/week2.c \
+../src/week2a.c \
+../src/week2b.c \
+../src/week2c.c \
 ../src/ASF/common/boards/user_board/init.c \
 ../src/main.c
 
@@ -66,28 +68,36 @@ ASM_SRCS +=
 OBJS +=  \
 src/toolbox.o \
 src/week1.o \
-src/week2.o \
+src/week2a.o \
+src/week2b.o \
+src/week2c.o \
 src/ASF/common/boards/user_board/init.o \
 src/main.o
 
 OBJS_AS_ARGS +=  \
 src/toolbox.o \
 src/week1.o \
-src/week2.o \
+src/week2a.o \
+src/week2b.o \
+src/week2c.o \
 src/ASF/common/boards/user_board/init.o \
 src/main.o
 
 C_DEPS +=  \
 src/toolbox.d \
 src/week1.d \
-src/week2.d \
+src/week2a.d \
+src/week2b.d \
+src/week2c.d \
 src/ASF/common/boards/user_board/init.d \
 src/main.d
 
 C_DEPS_AS_ARGS +=  \
 src/toolbox.d \
 src/week1.d \
-src/week2.d \
+src/week2a.d \
+src/week2b.d \
+src/week2c.d \
 src/ASF/common/boards/user_board/init.d \
 src/main.d
 
@@ -105,6 +115,10 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
+
+
+
+
 
 
 
