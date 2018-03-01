@@ -50,6 +50,7 @@ SUBDIRS :=  \
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
+../src/lcd.c \
 ../src/toolbox.c \
 ../src/week1.c \
 ../src/week2a.c \
@@ -66,6 +67,7 @@ ASM_SRCS +=
 
 
 OBJS +=  \
+src/lcd.o \
 src/toolbox.o \
 src/week1.o \
 src/week2a.o \
@@ -75,6 +77,7 @@ src/ASF/common/boards/user_board/init.o \
 src/main.o
 
 OBJS_AS_ARGS +=  \
+src/lcd.o \
 src/toolbox.o \
 src/week1.o \
 src/week2a.o \
@@ -84,6 +87,7 @@ src/ASF/common/boards/user_board/init.o \
 src/main.o
 
 C_DEPS +=  \
+src/lcd.d \
 src/toolbox.d \
 src/week1.d \
 src/week2a.d \
@@ -93,6 +97,7 @@ src/ASF/common/boards/user_board/init.d \
 src/main.d
 
 C_DEPS_AS_ARGS +=  \
+src/lcd.d \
 src/toolbox.d \
 src/week1.d \
 src/week2a.d \
@@ -115,6 +120,8 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
+
+
 
 
 

@@ -6,5 +6,3 @@
  */ 
 #include "toolbox.h"
 void wait(int ms);
-void opdrB2(void);
-void opdrB3(void);

@@ -1,11 +1,67 @@
+#define F_CPU 8000000
 
-#include "main.h"
-#include "week1.h"
-#include "week2c.h"
+#include <avr/io.h>
+#include <avr/delay.h>
+#include <string.h>
+#include "LCD.h"
 
-int main (void)
+static char zin[] = "Ik hou van pannenkoeken en ook van stroop";
+static char scrolltxt[] = "Aantal keer gedrukt: ";
+int counter = 0;
+
+
+int main(void)
 {
-	opdr2B4();
+		DDRB = 0xFF;
+		DDRD = 0x00;
+		DDRC = 0xFF;
+		TCNT2 = -1;
+		TIMSK |= (1 << 6);
+		SREG |= (1 << 7);
+		TCCR2 = 0b0000111;  //TCCR2 = 0b0010111;
+		
+		sei();
+		
+		PORTC = 0x00;
+		
+		init();
+		clr_display();
+		int length = strlen(scrolltxt) + 1;
+		while (1)
+		{
+			for(int x = 0; x< length; x++) {
+				PORTB = TCNT2;
+				set_display(1);
+				wait(250);
+			}
+		}
+		
+		return 0;
+}
 
-	return 1;
+int mainOpdr1(void)
+{
+	DDRD = 0xFF;
+	DDRC = 0xFF;
+	PORTC = 0x00;
+	
+	init();
+	clr_display();
+	display_text(zin);
+	int length = strlen(zin);
+	while (1)
+	{
+		for(int x = 0; x< length; x++) {
+			set_display(1);
+			wait(250);
+		}
+	}
+	
+	return 0;
+}
+
+void wait(int ms) {
+	for(int x= 0; x < ms; x++) {
+		_delay_ms(1);
+	}
 }

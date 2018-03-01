@@ -2,6 +2,8 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
+src\lcd.c
+
 src\toolbox.c
 
 src\week1.c

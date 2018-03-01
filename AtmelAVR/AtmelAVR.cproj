@@ -207,6 +207,12 @@
     <Folder Include="src\config\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\lcd.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\lcd.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="src\main.h">
       <SubType>compile</SubType>
     </Compile>
