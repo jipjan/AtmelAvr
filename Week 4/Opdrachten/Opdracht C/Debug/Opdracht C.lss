@@ -525,7 +525,6 @@ int main()
  2dc:	90 e0       	ldi	r25, 0x00	; 0
 	
 	return (1);
-}
  2de:	df 91       	pop	r29
  2e0:	cf 91       	pop	r28
  2e2:	08 95       	ret
