@@ -13,7 +13,7 @@
 void initAdc() {
 	// ADC ref. spanning op internal 2.56V ref
 	// 'hoge byte gevuld' en ADC0 aanzetten
-	ADMUX = 0b11100000;
+	ADMUX = 0b11100010;
 	
 	// enable, start en met freerunning en /64
 	ADCSRA = 0b11100110;
@@ -33,19 +33,19 @@ int main(void)
     
     initAdc();
     init();
-	
+	char string[8];
     while (1)
-    {
-	    // Show ADCH on leds
-	    PORTA = ADCH;
-		
+    {	
 	    clr_display();
-	    char string[16];
-	    int temp = ADCH;
-	    sprintf(string, "Temp: 0x%.2X", temp);
+		// temp2 = (temp * 2) + (tempL / 128);
+	    sprintf(string, "Temp: %d", ADCH * 2);
 	    display_text(string);
 	    
-	    wait(100);
+		// Show ADCH on leds
+		PORTA = ADCH;
+		PORTB = ADCL;
+	    wait(500);
     }
+	return 0;
 }
 
