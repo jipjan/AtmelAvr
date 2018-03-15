@@ -1,6 +1,7 @@
 #include "toolbox.h"
 #include <avr/pgmspace.h>
 #include "display.h"
+#include "gamelogic.h"
 
 int main( void )
 {
@@ -12,15 +13,6 @@ int main( void )
 	wait(500);
 	displayClrPixel(5,3);
 	display();
-	/*
-	while(true) {
-		displayClr();
-		wait(500);
-		displaySetPixel(0, 0);
-		display();
-		wait(500);
-	}
-	*/
 
 	return 1;
 }
