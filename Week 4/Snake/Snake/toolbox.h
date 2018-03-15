@@ -10,7 +10,7 @@
 #define TOOLBOX_H_
 
 #define true 1
-#define false 1
+#define false 0
 
 #define F_CPU 8000000
 #define BIT(x) (1 << (x))
