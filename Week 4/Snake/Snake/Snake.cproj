@@ -119,6 +119,12 @@
     <Compile Include="fonts.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="gamelogic.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="gamelogic.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="main.c">
       <SubType>compile</SubType>
     </Compile>
