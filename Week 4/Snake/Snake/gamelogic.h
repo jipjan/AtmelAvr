@@ -4,7 +4,7 @@
  * Created: 15-3-2018 13:19:55
  *  Author: jaapj
  */ 
-
+#include <stdlib.h>
 
 #ifndef GAMELOGIC_H_
 #define GAMELOGIC_H_

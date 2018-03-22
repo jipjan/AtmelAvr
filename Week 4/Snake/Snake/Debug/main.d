@@ -15,7 +15,8 @@ main.d main.o: .././main.c .././toolbox.h \
  d:\programs\atmel\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h \
  d:\programs\atmel\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\pgmspace.h \
  d:\programs\atmel\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stddef.h \
- .././display.h .././gamelogic.h
+ .././display.h .././gamelogic.h \
+ d:\programs\atmel\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdlib.h
 
 .././toolbox.h:
 
@@ -54,3 +55,5 @@ d:\programs\atmel\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\includ
 .././display.h:
 
 .././gamelogic.h:
+
+d:\programs\atmel\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdlib.h:
