@@ -19,24 +19,27 @@ void gl_gamestep()
 	
 }
 
-void generateDot ( void ){
+int * generateDot (int snake_c, int snake_r ){
 	
-	uint8_t overlap;
+	static int dots[2];
+	
+	int overlap = 0;
 	
 	do{
 		
-		overlap = 0;											/* Assume Not Found */
-		
-		rdot = (uint8_t) ( rand() % 8 );						/* Generate random points */
-		cdot = (uint8_t) ( rand() % 8 );
-		
-		for( uint8_t i = 0; i < snake_length; i++ ){
+		overlap = 0;										   
+												//dots[0] = collumn
+												//dots[1] = row
+		dots[0] = rand() % 8;					//Generate points
+		dots[1] = rand() % 8;
 			
-			if( ( rdot == snakeRow[i] ) && ( cdot == snakeCol[i] ) ){
-				overlap = 1;
-				break;
-			}
+		if( snake_c == dots[0] || snake_r == dots[1] )
+		{
+			overlap = 1;
+			break;
 		}
 		
 	} while( overlap );
+	
+	return dots;
 }

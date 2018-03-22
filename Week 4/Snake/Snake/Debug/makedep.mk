@@ -4,6 +4,8 @@
 
 display.c
 
+gamelogic.c
+
 main.c
 
 toolbox.c
