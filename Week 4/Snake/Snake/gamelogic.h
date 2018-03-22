@@ -9,6 +9,7 @@
 #ifndef GAMELOGIC_H_
 #define GAMELOGIC_H_
 
+extern uint8_t rdot, cdot;									/* Dot location */
 
 
 
