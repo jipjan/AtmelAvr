@@ -10,11 +10,10 @@
 #define LCD_H_
 
 void lcd_init();
-void lcd_clr_display();
-void lcd_writeChar( unsigned char dat );
-void lcd_display_text(char *str);
-void lcd_set_cursor(int pos);
-void lcd_set_display(int pos);
+void clr_display();
+void display_text(char *str);
+void set_cursor(int pos);
+void set_display(int pos);
 
 void lcd_command ( unsigned char dat );
 

@@ -38,7 +38,9 @@ SUBDIRS :=
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
 ../display.c \
+../gamelogic.c \
 ../main.c \
+../segment.c \
 ../toolbox.c
 
 
@@ -50,22 +52,30 @@ ASM_SRCS +=
 
 OBJS +=  \
 display.o \
+gamelogic.o \
 main.o \
+segment.o \
 toolbox.o
 
 OBJS_AS_ARGS +=  \
 display.o \
+gamelogic.o \
 main.o \
+segment.o \
 toolbox.o
 
 C_DEPS +=  \
 display.d \
+gamelogic.d \
 main.d \
+segment.d \
 toolbox.d
 
 C_DEPS_AS_ARGS +=  \
 display.d \
+gamelogic.d \
 main.d \
+segment.d \
 toolbox.d
 
 OUTPUT_FILE_PATH +=Snake.elf
@@ -82,6 +92,10 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
+
+
+
+
 
 
 

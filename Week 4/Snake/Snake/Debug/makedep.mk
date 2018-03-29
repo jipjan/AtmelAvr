@@ -4,7 +4,11 @@
 
 display.c
 
+gamelogic.c
+
 main.c
+
+segment.c
 
 toolbox.c
 

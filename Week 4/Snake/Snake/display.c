@@ -9,6 +9,7 @@
 
 #include "display.h"
 #include "fonts.h"
+#include <string.h>
 
 // HT16K33 routines
 void displayInitHT16K33(uint8_t i2c_address);
@@ -175,7 +176,7 @@ notes:
 Version:	DMK, Initial code
 *******************************************************************/
 {
-	for( uint8_t idx = 0; idx < width - 1; idx++) {
+	for( uint8_t idx = 0; idx < width; idx++) {
 		buf[idx] = 0;
 	}
 }
@@ -203,6 +204,11 @@ notes:		Maakt gebruik van displayChar(..)
 Version:	DMK, Initial code
 *******************************************************************/
 {
+}
+
+void displaySnake(uint8_t* arr, uint8_t size)
+{
+	memcpy(buf, arr, width);
 }
 
 

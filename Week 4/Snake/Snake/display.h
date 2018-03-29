@@ -17,6 +17,7 @@ void displayString(char *str, uint8_t x, uint8_t y);
 void displayRotl(void);
 void displayRotr(void);
 void displayClr(void);
+void displaySnake(uint8_t*, uint8_t);
 
 void display(void);
 
