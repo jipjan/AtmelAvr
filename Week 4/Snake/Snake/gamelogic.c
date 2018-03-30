@@ -17,6 +17,7 @@
 
 uint8_t direction;
 uint8_t snake_length;
+uint8_t speed;
 
 size_t loc_size = sizeof(location);
 
@@ -81,6 +82,22 @@ void gl_make_food()
 		gl_make_food();
 }
 
+void gl_set_speed(uint8_t setSpeed)
+{
+	speed = setSpeed;
+}
+
+void gl_speed_increase()
+{
+	uint8_t division = speed / 20;
+	speed = speed - division;
+}
+
+uint8_t gl_get_speed()
+{
+	return speed;
+}
+
 void gl_gamestep()
 {
 	// Determine next location of head
@@ -118,6 +135,7 @@ void gl_gamestep()
 		current = malloc(snake_length * loc_size);
 		temp[0] = nextLoc;
 		gl_make_food();
+		gl_speed_increase();
 	} else {
 		memcpy(temp + 1, current, snake_length * loc_size - loc_size);
 		temp[0] = nextLoc;

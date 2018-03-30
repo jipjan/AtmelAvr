@@ -22,6 +22,9 @@ typedef struct _location {
 void gl_restart(void);
 void gl_gamestep(void);
 void gl_make_food(void);
+void gl_set_speed(uint8_t setSpeed);
+void gl_speed_increase();
+uint8_t gl_get_speed();
 void gl_change_direction(uint8_t);
 int gl_compare_locations(location* first, location* second);
 void gl_loc_to_display(void);

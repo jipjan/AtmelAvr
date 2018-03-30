@@ -42,12 +42,13 @@ int main( void )
 	*/
 	
 	gl_restart();
+	gl_set_speed(500);
 	
 	DDRB = 0xFF;
 	DDRA = 0xFF;	
 	
 	while(1) {
-		wait(500);
+		wait(gl_get_speed());
 		if (PINA & BIT(5))
 			gl_change_direction(RIGHT);
 		else if (PINA & BIT(6))
