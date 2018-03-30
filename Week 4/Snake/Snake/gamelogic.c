@@ -82,7 +82,7 @@ void gl_make_food()
 		gl_make_food();
 }
 
-void gl_set_speed(uint8_t setSpeed)
+void gl_set_speed(uint16_t setSpeed)
 {
 	speed = setSpeed;
 }
