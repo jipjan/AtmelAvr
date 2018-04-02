@@ -42,7 +42,6 @@ int main( void )
 	*/
 	
 	gl_restart();
-	gl_set_speed(500);
 	
 	DDRB = 0xFF;
 	DDRA = 0xFF;	

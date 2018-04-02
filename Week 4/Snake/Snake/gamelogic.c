@@ -17,7 +17,7 @@
 
 uint8_t direction;
 uint8_t snake_length;
-uint8_t speed;
+uint16_t speed;
 
 size_t loc_size = sizeof(location);
 
@@ -41,6 +41,7 @@ void gl_restart()
 	displayDriverInit();
 	srand(time(NULL));
 	snake_length = 2;
+	speed = 500;
 	
 	free(temp);
 	free(current);
@@ -82,18 +83,12 @@ void gl_make_food()
 		gl_make_food();
 }
 
-void gl_set_speed(uint16_t setSpeed)
-{
-	speed = setSpeed;
-}
-
 void gl_speed_increase()
-{
-	uint8_t division = speed / 20;
-	speed = speed - division;
+{	
+	speed -= speed / 20;
 }
 
-uint8_t gl_get_speed()
+uint16_t gl_get_speed()
 {
 	return speed;
 }
